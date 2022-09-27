@@ -104,3 +104,18 @@ Diferente do meio somador(Half-adder), o somador completo (full-adder) propriame
 ![](/images/somador_completo.jpg)
 ![](/images/somador_completo_table.jpg.png)
 
+
+## Display de 7 segmentos
+
+A placa Basys3 possui um display de 7 segmentos do tipo anodo comum energizado com 3.3V(nível lógico 1) por meio de um transistor(atuando como chave eletrônica) TBJ PNP acionados pelos pinos (W4, V4, U4, U2).
+
+![](/images/7seg.jpg)
+
+Sua lógica é inversa, ou seja para acionar os segmentos precisarei colocar 0V (jogar para nivel lógico 0) os pinos (W7, W6, U8, V8, U5, V5, U7 e V7).
+
+Sendo assim representado da seguinte maneira:
+
+![](/images/7seg2.jpg)
+
+![](/images/7seg3.jpg)
+
