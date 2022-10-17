@@ -119,3 +119,15 @@ Sendo assim representado da seguinte maneira:
 
 ![](/images/7seg3.jpg)
 
+## Contadores
+Contadores são um arranjo sequencial de flip-flops o qual existem dois tipos síncronos e assíncronos ambos regidos por um sinal de clock.
+
+Os contadores síncronos são quando os flip-flop são acionados de forma paralela no mesmo pulso de clock seja na borda de subida ou descida. Já o assíncronos o qual é o tipo
+que iremos aplicar neste laboratório é quando o sinal de clock é colocado apenas na entrada do primeiro flip-flop e os outros são ligados em cascata.
+
+![](/images/contador.png)
+
+O que mais comumente usado é o contador assincrono por conta da sua simplicidade de implementação, porém temos ficarmos atento devido a atraso de propagação(insitreco no CI o qual é mencionado no datasheet) entre as comutações de um flip-flop o outro, o qual pode tornar o projeto impreciso e inviável devido ao acumulo de atrasos caso se utilizar muitos flip-flops.
+
+No caso do circuitos sincrono não temos problemas de tempo de propagação(tempo é reduzido) pois todos os flip-flops estão ligados em paralelo, porém sua implementação requer uma atenção a mais na analise.
+
