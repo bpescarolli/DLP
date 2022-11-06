@@ -131,3 +131,16 @@ O que mais comumente usado é o contador assincrono por conta da sua simplicidad
 
 No caso do circuitos sincrono não temos problemas de tempo de propagação(tempo é reduzido) pois todos os flip-flops estão ligados em paralelo, porém sua implementação requer uma atenção a mais na analise.
 
+## Sistemas digitais sequenciais
+
+Um sistema digital sequencial é basicamente composto por um circuito combinacional e por elementos de memória como mostra a imagem abaixo.
+
+![](/images/combinacional.png)
+
+As entradas e a saídas estão conectadas somente no circuito combinacional. Já os elementos de memoria(registradores compostos por flip-flop´s) são circuitos capazes de  armazenar informação codificada em binário, algumas saídas do circuito combinacional são entradas para os elementos de memoria constituem , uma parte das entrada do circuito combinacional o qual acabam recebendo o nome de variável de estado atual, com isso acaba formando um laço de realimentação pois a saída de um bloco e a entrada do outro e vice-versa.
+
+A informações armazenada nos elementos de memoria determina o estado atual do circuito sequencial. O circuito sequencial com base nesta informação determina o valores da sua saída o qual torna estes os valores do próximo estado que é armazenado novamente pelo elementos de memoria e o ciclo volta a se repetir de forma sucessiva.
+
+Estes circuitos é divido em dois tipos de acordo com o comportamento de seu sinal em função do tempo: síncronos e assíncronos.
+
+
